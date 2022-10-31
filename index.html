@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+    <div class="circle"></div>
+    <header>
+      <a href="#"><img src="icon.png" class="logo"></a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">What</a></li>
+        <li><a href="#">Hoe</a></li>
+      </ul>
+    </header>
+    <div class="content">
+      <div class="textBox">
+        <h2>Its not codeine<br>THIS IS <span>LEAN</span></h2>
+        <p>YOOOOOOOOOOO</p>
+        <a href="#">Узнать больше?</a>
+     </div>
+     <div class="imgBox">
+       <img src="iwan.png" class="hitech">
+     </div>
+    </div>
+    <ul class="glock">
+      <li><img src="11.png" onclick="imgSlider('111.png');changeCircleColor('#017143')"></li>
+      <li><img src="iwan.png" onclick="imgSlider('iwan1.png');changeCircleColor('#FF00FF')"></li>
+      <li><img src="13.png" onclick="imgSlider('133.png');changeCircleColor('#f5deb3')"></li>
+    </ul>
+  </section>
+
+  <script type="text/javascript">
+    function imgSlider(anything){
+      document.querySelector('.hitech').src = anything;
+    }
+    function changeCircleColor(color){
+      const circle = document.querySelector('.circle');
+      circle.style.background = color;
+}
+</script>
+</body>
+</html>
+
