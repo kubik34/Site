@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Погода</title>
+  <link rel="stylesheet" href="/a/main/static/css/style.css">
+</head>
+<body>
+  <section>
+    <div class="circle"></div>
+    <header>
+      <a href="#"><img src="/a/main/static/img/icon.png" class="logo"></a>
+
+    </header>
+    <div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+
+    <ul class="menu__box">
+      <li><a class="menu__item" href="#">Войти</a></li>
+      <li><a class="menu__item" href="#">Регестрация</a></li>
+      <li><a class="menu__item" href="#">Скачать приложение</a></li>
+      <li><a class="menu__item" href="#">Задать вопрос</a></li>
+      <li><a class="menu__item" href="#inst" onclick="slowScroll('#inst')">Как запустить?</a></li>
+    </ul>
+
+  </div>
+    <div class="content">
+      <div class="textBox">
+        <h2>Погода в твоём городе <br>узнай какой будет погода прямо<span> Сейчас!</span></h2>
+        <p>Солнечная?А может быть пасмурная,морозная или ветренная?</p>
+        <a href="https://github.com/kubik34/Site">Как это работает?</a>
+     </div>
+     <div class="imgBox">
+       <img src="/a/main/static/img/iwan.png" class="hitech">
+     </div>
+    </div>
+    <ul class="glock">
+      <li><img src="/a/main/static/img/sun.png" onclick="imgSlider('/a/main/static/img/1.png');changeCircleColor('#017143')"></li>
+      <li><img src="/a/main/static/img/iwan.png" onclick="imgSlider('/a/main/static/img/2.png');changeCircleColor('#191970')"></li>
+      <li><img src="/a/main/static/img/cloudy.png" onclick="imgSlider('/a/main/static/img/3.png');changeCircleColor('#FF7F50')"></li>
+    </ul>
+  </section>
+  </bottom>
+  <div id="inst">
+  </div>
+  <div class="swag">
+  <img src="/a/main/static/img/wa.png" class="swag1"/>
+    <img src="/a/main/static/img/bacc.png" class="swag2"/>
+  </div>
+
+    </div>
+
+
+  <script type="text/javascript">
+    function imgSlider(anything){
+      document.querySelector('.hitech').src = anything;
+    }
+    function changeCircleColor(color){
+      const circle = document.querySelector('.circle');
+      circle.style.background = color;
+}
+
+</script>
+</body>
+</body>
+</html>
+
